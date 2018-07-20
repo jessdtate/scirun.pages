@@ -321,8 +321,10 @@ We will show the examples located in `src/Interface/Modules/Template` as example
 The module design file is an xml file that describes the UI structure. This file can be created and edited in the Qt editor. Figure 2.1 shows the example template *ModuleDesignerFile.ui* within the Qt editor.
 As shown, the user can interactively modify the placement of the widgets in the window. The Widget Box window allows the user to choose and place new objects within the window. The Property Editor allows for the modification of properties of the various objects and widgets within the UI, including size, type of input, names, etc. With the Object Inspector window, the hierarchy and organization of the UI can be changed.
 
-![Template module interface design file as seen in the Qt editor.](SCIRunImages/QT-editor.png)
-             Figure 2.1 Template module interface design file as seen in the Qt editor
+<figure id="editor">
+  <img src="SCIRun5ModuleGeneration_figures/QT-editor.png" alt="Template module interface design file as seen in the Qt editor.">
+  <figcaption>Figure 2.1 Template module interface design file as seen in the Qt editor.</figcaption>
+</figure>
              
 When using the editor to make a module UI, there are a few things to consider. First, make sure all the relevant objects, including the name of UI (QDialog) is consistent with module dialog code. You can change the size and placement of objects with the property manager, but make sure that you leave some buffer space as some operating systems will interpret the file slightly differently. The structure of the UI can be changed or destroyed.
 Look at some of the existing modules for examples.
