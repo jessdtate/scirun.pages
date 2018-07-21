@@ -5,10 +5,6 @@ tags: module, developer, conversion
 
 ---
 
-<script type="text/javascript" async
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
-</script>
-
 
 <link rel="stylesheet" href="css/modest.css">
 
@@ -19,22 +15,20 @@ tags: module, developer, conversion
 #### Scientific Computing & Imaging Institute 
 #### University of Utah
 
-&nbsp;
 
 ### SCIRun software download: 
 #### [http://software.sci.utah.edu](http://software.sci.utah.edu)
 ### Center for Integrative Biomedical Computing:
 #### [http://www.sci.utah.edu/cibc](http://www.sci.utah.edu/cibc)
-&nbsp;
+
 ###### This project was supported by grants from the National Center for Research Resources 
 ###### (5P41RR012553-14) and the National Institute of General Medical Sciences 
 ###### (8 P41 GM103545-14) from the National Institutes of Health.
 
-&nbsp;
+
 
 ##### Authors:  
-##### Jess Tate
-##### Garima Chhabra
+##### Jess Tate, Garima Chhabra
 --
 ### Contents
 
@@ -326,7 +320,7 @@ The module design file is an xml file that describes the UI structure. This file
 As shown, the user can interactively modify the placement of the widgets in the window. The Widget Box window allows the user to choose and place new objects within the window. The Property Editor allows for the modification of properties of the various objects and widgets within the UI, including size, type of input, names, etc. With the Object Inspector window, the hierarchy and organization of the UI can be changed.
 
 <figure id="QT-Editor">
-<img src="SCIRun5ModuleGeneration_figures/QT-editor.png">
+<img src="SCIRun5ModuleGeneration_figures/QT-editor.png" alt="Template module interface design file as seen in the Qt editor.">
 <figcaption>Figure 2.1 Template module interface design file as seen in the Qt editor</figcaption>
 </figure>
      
@@ -712,7 +706,7 @@ Figure 4.1 shows what the module should look like in the Qt editor.
 
 
 <figure id="simpleUI">
-<img src="SCIRun5ModuleGeneration_figures/simpleUI.png">
+<img src="SCIRun5ModuleGeneration_figures/simpleUI.png" alt="">
 <figcaption>Figure 4.1 Module interface design file for the TestModuleSimpleUI module as seen in the Qt editor.
 </figcaption>
 </figure>
@@ -1039,7 +1033,7 @@ We will make the \emph{SortMatrixDialog.ui} in the Qt editor as we did previousl
 
 
 <figure id="algoUI">
-<img src="SCIRun5ModuleGeneration_figures/algo_ui.png">
+<img src="SCIRun5ModuleGeneration_figures/algo_ui.png" alt="">
 <figcaption>Figure 5.1 Module interface design file for the SortMatrix module as seen in the Qt editor.</figcaption>
 </figure>
 
@@ -1281,7 +1275,7 @@ This network can be used to see the input and output of the SortMatrix module.
 If this or another module is not behaving as expected, change the output of some functions and set the output of the module to be some of the intermediate steps, or use `std::cout<< "message" <<std::endl;` to print values as the code runs. Unit Test can also find some bugs in the module code. 
 
 <figure id="algoNetwork">
-<img src="SCIRun5ModuleGeneration_figures/algo_network.png">
+<img src="SCIRun5ModuleGeneration_figures/algo_network.png" alt="">
 <figcaption>Figure 5.2 Network for running and testing the SortMatrix module. </figcaption>
 </figure>
 
