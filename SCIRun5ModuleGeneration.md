@@ -319,9 +319,11 @@ We will show the examples located in `src/Interface/Modules/Template` as example
 The module design file is an xml file that describes the UI structure. This file can be created and edited in the Qt editor. Figure 2.1 shows the example template *ModuleDesignerFile.ui* within the Qt editor.
 As shown, the user can interactively modify the placement of the widgets in the window. The Widget Box window allows the user to choose and place new objects within the window. The Property Editor allows for the modification of properties of the various objects and widgets within the UI, including size, type of input, names, etc. With the Object Inspector window, the hierarchy and organization of the UI can be changed.
 
-![Template module interface design file as seen in the Qt editor.](SCIRunImages/QT-editor.png)
 
-Figure 2.1 Template module interface design file as seen in the Qt editor
+<figure id="QT-Editor" alt="Template module interface design file as seen in the Qt editor.">
+<img src="SCIRun5ModuleGeneration_figures/QT-editor.png">
+<figcaption>Figure 2.1 Template module interface design file as seen in the Qt editor</figcaption>
+</figure>
      
 
 When using the editor to make a module UI, there are a few things to consider. First, make sure all the relevant objects, including the name of UI (QDialog) is consistent with module dialog code. You can change the size and placement of objects with the property manager, but make sure that you leave some buffer space as some operating systems will interpret the file slightly differently. The structure of the UI can be changed or destroyed.
@@ -704,8 +706,11 @@ This can be done in the *Object Inspector* or in the *Property Editor* when the 
 Figure 4.1 shows what the module should look like in the Qt editor.
 
 
-![simpleUI](SCIRunImages/simpleUI.png)
-Figure 4.1 Module interface design file for the TestModuleSimpleUI module as seen in the Qt editor.
+<figure id="simpleUI" alt="A simple module UI">
+<img src="SCIRun5ModuleGeneration_figures/simpleUI.png">
+<figcaption>Figure 4.1 Module interface design file for the TestModuleSimpleUI module as seen in the Qt editor.
+</figcaption>
+</figure>
 
 
 Now that the module UI is designed, we need to link it to the module with the module dialog code.
@@ -1028,8 +1033,10 @@ The process and code for this example is very similar to the previous example.
 We will make the \emph{SortMatrixDialog.ui} in the Qt editor as we did previously (Chapter 2). It may be easier to copy a previously created UI file and modify it rather than to create one from scratch. Copy the `src/Interface/Template/ModuleDesignerFile.ui` file and rename it.Delete the widgets in the UI and add two radial button widgets (drag from the 'Widget Box' window). Change the labels to 'ascending' and 'descending', and the names (in the 'Object Inpector' window) to `ascendButton_` and `descendButton_`. You will also need to make sure to change the name of the \verb|QDialog| to \verb|SortMatrixDialog| (also in the 'Object Inpector'). The placement of the buttons and the size of the window and boxes can be adjusted in the 'Property Editor' window. The UI should look similar to Figure 5.1.
 
 
-![Algo_UI](SCIRunImages/algo_ui.png)
-Figure 5.1 Module interface design file for the SortMatrix module as seen in the Qt editor.
+<figure id="algoUI" alt="Module interface design file for the SortMatrix module as seen in the Qt editor.">
+<img src="SCIRun5ModuleGeneration_figures/algo_ui.png">
+<figcaption>Figure 5.1 Module interface design file for the SortMatrix module as seen in the Qt editor.</figcaption>
+</figure>
 
 
 The *SortMatrixDialog.h* is virtually identical to the header in the previous example (Chapter 4), except for the names, as shown here:
@@ -1268,8 +1275,11 @@ Alternatively, the matrix entries can be printed as a list with `%4.2g` (make su
 This network can be used to see the input and output of the SortMatrix module.  
 If this or another module is not behaving as expected, change the output of some functions and set the output of the module to be some of the intermediate steps, or use `std::cout<< "message" <<std::endl;` to print values as the code runs. Unit Test can also find some bugs in the module code. 
 
-![Algo_network.png](SCIRunImages/algo_network.png)
-Figure 5.2 Network for running and testing the SortMatrix module. 
+
+<figure id="algoNetwork" alt="Network for running and testing the SortMatrix module.">
+<img src="SCIRun5ModuleGeneration_figures/algo_network.png">
+<figcaption>Figure 5.2 Network for running and testing the SortMatrix module. </figcaption>
+</figure>
 
 
 ### Chapter 6
