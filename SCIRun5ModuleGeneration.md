@@ -316,7 +316,7 @@ As shown in this template example, the module.cc file contains mostly constructo
 There are three files needed to set up a UI for a module, a design file, a header file, and a .cc file. These files should all be located in the same directory within the `src/Interface/Modules/`. 
 We will show the examples located in `src/Interface/Modules/Template` as examples of the core functions needed.
 ##### 2.4.1 Module Design File
-The module design file is an xml file that describes the UI structure. This file can be created and edited in the Qt editor. Figure 2.1 shows the example template *ModuleDesignerFile.ui* within the Qt editor.
+The module design file is an xml file that describes the UI structure. This file can be created and edited in the Qt editor. <a href="#QT-Editor">Figure 2.1</a> shows the example template *ModuleDesignerFile.ui* within the Qt editor.
 As shown, the user can interactively modify the placement of the widgets in the window. The Widget Box window allows the user to choose and place new objects within the window. The Property Editor allows for the modification of properties of the various objects and widgets within the UI, including size, type of input, names, etc. With the Object Inspector window, the hierarchy and organization of the UI can be changed.
 
 
